@@ -1,0 +1,129 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0 ;
+    margin: 0;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    position: relative;
+    background-color:hsl(225, 100%, 94%) ;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:contain ;
+    min-height: 100vh;
+    font-size: 16px;
+    
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    min-height: 80%;
+}
+.text-container{
+    padding: 7%;
+    text-align: center;
+}
+ h2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.text-container p{
+    color: #8a8a8a;
+    margin-bottom: 25px;
+}
+.box-main{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 5px 15px;
+    align-items: center; 
+    justify-content: space-between;   
+}
+.box-main a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%) ;
+    transition: color .3s ease;
+}
+
+.box-left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+.box-left div{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box-inner h5{
+    font-size: 15px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%)
+}
+.box-inner p{
+    font-size: 14px;
+    color:#8a8a8a;
+}
+
+.box-main a{
+    font-weight: 900;
+    color:  hsl(223, 47%, 50%);
+    
+}
+a.proceed:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; ;
+    transition:  box-shadow .5s ease-in-out;
+}
+a.proceed{
+    display: block;
+    text-decoration: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+a.cancel{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+}
+a.cancel:hover{
+    color: hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+@media screen and (max-width: 425px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        width: 70%;
+    }
+    h2{
+    font-size: 23px;}
+    .box-left div{
+        margin-left: 5px;
+    }
+    a.proceed,
+    a.cancel,
+    .box-left h5
+    {
+        font-size:11px ;
+    }
+    }
+    
+
+    
